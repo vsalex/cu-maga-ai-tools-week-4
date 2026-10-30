@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracker"
+version = "0.1.0"
+description = "Учебный консольный трекер задач"
+requires-python = ">=3.11"
+
+[project.scripts]
+tracker = "tracker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
